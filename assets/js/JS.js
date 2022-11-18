@@ -30,3 +30,40 @@ function openImg(e){ // e er et parameter, som man kan referer til inde i functi
 modal.addEventListener("click", function(){ //ved click starter functionen, som lukker modalen.
     modal.close();
 });
+
+// JS validation on Newsletter sign up form
+
+function validate (formObj) {
+
+    let errors = [];
+
+    if (formObj.fname.value === "") {
+        
+        errors.push("First name is required");
+    }
+
+    if (formObj.lname.value === ""){
+
+        errors.push("Last name is required");
+    }
+
+    if (formObj.email.value === "") {
+        errors.push("Email is required");
+    }
+
+    if(errors.length > 0){
+        let msg ="The following errors have been found\n\n";
+
+        for(let i = 0; i< errors.length; i++) {
+
+            msg += errors[i] + "\n";
+        }
+
+        console.log(errors);
+        alert(msg);
+        return false;
+
+    }
+
+    return true;
+}

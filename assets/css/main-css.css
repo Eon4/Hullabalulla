@@ -41,3 +41,42 @@ dialog::backdrop{
 #modal:hover #title{
     opacity: 1;
 }
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+form p, label {
+    font-size: 18pt;
+}
+
+form input {
+    background-color: var(--light);
+}
+
+form input:last-of-type {
+    background-color: var(--send);
+    color: var(--light);
+}
+
+form textarea {
+    background-color: var(--light);
+}
+
+fieldset {
+    background-color: var(--medium);
+    color: var(--light);
+}
+
+.form-text {
+    text-decoration: line-through;
+}
+
+.form-main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem 1rem;
+}

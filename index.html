@@ -17,7 +17,23 @@
     <!-- Cæcilies sektion -->
 
     <!-- Alex's sektion -->
-
-    <!-- Camillas sektion -->
+    
+    <form novalidate onsubmit="return validate(this)">
+        <fieldset>
+            <p>Sign up for our newsletter to get updates <span class="form-text">and spam</span> directly to your inbox!</p><br>
+            <div class="form-main">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" placeholder="John" required><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Smith" required><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="email@email.com" required><br><br>
+            <label for="comment">Comments:</label>
+            <textarea name="comment" id="" cols="30" rows="10" placeholder="Ask us anything!"></textarea>
+            <input type="submit" value="Send">
+        </div>
+        </fieldset>
+    </form>
+    <!-- Kamillas sektion -->
 </body>
 </html>
