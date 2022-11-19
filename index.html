@@ -19,6 +19,29 @@
     <!-- Alex's sektion -->
 
     <!-- Kamillas sektion -->
-    
+    <footer>
+        <figure>
+            <img id="logo" src="assets/images/earthLogo.png" alt="Logo af jorden" onclick="dialogFormFunction()" />
+        </figure>
+        <dialog id="dialogForm">
+            <form action="">
+                <fieldset id="fieldsetFooter">
+                    <span onclick="dialogFormLuk()">&#88;</span>
+                    <h3>Skriv dig op til nyhedsbrevet for at plante en træ.</h3>
+                    <label for="navn">Navn: </label>
+                    <input type="text" id="navn" name="navn" placeholder="Skriv dit fulde navn her" />
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="eksempel@email.dk" />
+                    <div>
+                        <input type="radio" id="nyhedsbrev" name="nyhedsbrev" />
+                        <label for="nyhedsbrev">Ja, tak! Jeg vil gerne plante et træ ved at skrive mig op til nyhedsbrevet.</label><br />
+                        <input type="radio" id="miljøsvin" name="nyhedsbrev" />
+                        <label for="nyhedsbrev">Nej, tak! Jeg er et miljøsvin og en skuffelse og vil ikke skrive mig op til nyhedsbrevet.</label>
+                    </div>
+                    <input type="submit" id="send" name="send" value="Send" onclick="dialogFormLuk()" />
+                </fieldset>
+            </form>
+        </dialog>
+    </footer>
 </body>
 </html>
