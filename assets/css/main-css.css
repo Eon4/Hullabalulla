@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;200;400;500;700&display=swap');
-@import url(nav.css);
 /* VARIABLES IN HTML: */
 :root {
-    --light: #f9f7f2;
-    --medium: rgb(119, 117, 115);
-    --dark: rgb(53, 52, 51);
-    --black: rgb(20, 19, 19);
+    --light: #eae9fa;
+    --medium: rgb(154, 165, 190);
+    --dark: rgb(63, 68, 109);
+    --black: rgb(17, 17, 38);
     --obs: #ef561f;
+    --send: rgb(62, 129, 57);
 }
 *{
     box-sizing: border-box;
@@ -41,3 +41,74 @@ dialog::backdrop{
 #modal:hover #title{
     opacity: 1;
 }
+
+/* ----------FOOTER------------------------------------------------- */
+footer{
+    background-color: var(--dark);
+    color: var(--medium);
+    padding: 4rem;
+    position: relative;
+}
+footer figure{
+    width: 250px;
+    margin: auto;
+}
+footer figure img{
+    width: 100%;
+    cursor: pointer;
+    filter: brightness(0.8);
+}
+footer figure img:hover{
+    filter: contrast(1) brightness(1);
+}
+footer #dialogForm{
+    border: none;
+    border-radius: 20px;
+    background-color: var(--light);
+}
+footer #dialogForm form #fieldsetFooter{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+footer #dialogForm form #fieldsetFooter span{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 20px;
+    padding: 5px;
+    font-family: 'Smooch Sans';
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--dark);
+    cursor: pointer;
+
+}
+footer #dialogForm form #fieldsetFooter h3{
+    font-family: 'Smooch Sans';
+    font-size: 2em;
+    font-weight: 500;
+    color: var(--dark);
+    margin-top: 0;
+}
+footer #dialogForm form #fieldsetFooter input{
+    margin-bottom: 1rem;
+}
+footer #dialogForm form #fieldsetFooter label[for=navn],
+footer #dialogForm form #fieldsetFooter label[for=email]{
+    font-family: 'Smooch Sans';
+    font-weight: 500;
+    font-size: 1.3em;
+    letter-spacing:2px;
+}
+footer #dialogForm form #fieldsetFooter input[type=checkbox]{
+    width: 10px;
+}
+footer #dialogForm form #fieldsetFooter label[for=nyhedsbrev]{
+    font-family: 'Smooch Sans';
+    font-weight: 500;
+    font-size: 1.3em;  
+}
+
+
